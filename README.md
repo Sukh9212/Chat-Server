@@ -8,10 +8,11 @@ Client.java, LoginWindow.java, MyRemote.java in a Client Folder. Please Make sur
 Steps to run:
 
 1. Open two instances of Command prompt and navigate one to client directory and other to server directory
-2. in server CMD first run the followinf command: start rmiregistry
-3. then in server CMD run the following command: java Server
-4. Above command will start the server. Now in client CMD run the following command: java chatwindow
-5. When the LoginWindow appears enter port number 9999 and don't give any server name because its just a local system. Enter your name and hit connect.
+2. Compile all your files by using javac for each file
+3. in server CMD first run the followinf command: start rmiregistry
+4. then in server CMD run the following command: java Server
+5. Above command will start the server. Now in client CMD run the following command: java chatwindow
+6. When the LoginWindow appears enter port number 9999 and don't give any server name because its just a local system. Enter your name and hit connect.
 
 Send message to all the users by typing in a message box.
 Or if You want to message to someone in particular just click on the person's name and type.
