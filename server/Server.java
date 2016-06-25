@@ -8,7 +8,7 @@ import  java.rmi.server.*;
     {
         private ServerSocket ss;
         public String username ;
-        private Hashtable outputStreams = new Hashtable();
+        private Hashtable<String, DataOutputStream> outputStreams = new Hashtable<>();
         public Vector<String>userlist = new Vector<String>();
         int flag,a,b,size;
         boolean flag1 = true;
@@ -132,7 +132,7 @@ import  java.rmi.server.*;
                     }
                 }
          }
-        static public void main( String args[] ) throws Exception 
+        public static void main( String args[] ) throws Exception 
         {
             MyRemote service = new Server();
             Naming.rebind("Remotehello",service);
